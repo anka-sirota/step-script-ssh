@@ -1,6 +1,6 @@
 name: script-ssh
-version: 0.0.2
-description: Executes script on server. User wouter/setup-ssh to initialize
+version: 0.0.3
+description: Executes command via SSH, prepends it with environment variables from list of names stored in $VARS_TO_EXPORT. Depends on wouter/setup-ssh
 keywords:
   - ssh
 properties:
