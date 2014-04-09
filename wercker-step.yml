@@ -1,5 +1,5 @@
 name: script-ssh
-version: 0.0.3
+version: 0.0.4
 description: Executes command via SSH, prepends it with environment variables from list of names stored in $VARS_TO_EXPORT. Depends on wouter/setup-ssh
 keywords:
   - ssh
