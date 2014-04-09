@@ -10,8 +10,8 @@ ENV=''
 for f in $VARS_TO_EXPORT
 do
     var=$f;
-    ENV+=" $f='${!var}'"
+    ENV+=" export $f='${!var}';"
 done
 echo $ENV
 
-$WERCKER_SSH "$ENV $WERCKER_SCRIPT_SSH_CODE"
+$WERCKER_SSH "($ENV $WERCKER_SCRIPT_SSH_CODE)"
